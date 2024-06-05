@@ -1,0 +1,70 @@
+# Calculator Program Documentation
+
+## Overview
+This calculator program allows users to perform basic arithmetic operations: addition, subtraction, multiplication, and division. The user can continue calculations with the result of the previous operation or start a new calculation. The program loops until the user decides to exit.
+
+## Functions
+
+### `add(n1, n2)`
+- **Description**: Adds two numbers.
+- **Parameters**:
+  - `n1` (float): The first number.
+  - `n2` (float): The second number.
+- **Returns**: The sum of `n1` and `n2`.
+
+### `subtract(n1, n2)`
+- **Description**: Subtracts the second number from the first number.
+- **Parameters**:
+  - `n1` (float): The first number.
+  - `n2` (float): The second number.
+- **Returns**: The difference between `n1` and `n2`.
+
+### `multiply(n1, n2)`
+- **Description**: Multiplies two numbers.
+- **Parameters**:
+  - `n1` (float): The first number.
+  - `n2` (float): The second number.
+- **Returns**: The product of `n1` and `n2`.
+
+### `divide(n1, n2)`
+- **Description**: Divides the first number by the second number.
+- **Parameters**:
+  - `n1` (float): The first number.
+  - `n2` (float): The second number.
+- **Returns**: The quotient of `n1` and `n2`.
+
+## Dictionary
+
+### `operations`
+- **Description**: A dictionary mapping operation symbols to their corresponding functions.
+- **Keys and Values**:
+  - `"+"` : `add`
+  - `"-"` : `subtract`
+  - `"*"` : `multiply`
+  - `"/"` : `divide`
+
+## Main Function
+
+### `calculator()`
+- **Description**: The main function to run the calculator. Prompts the user for input and performs the chosen arithmetic operation.
+- **Procedure**:
+  1. Prompts the user to enter the first number (`num1`).
+  2. Displays the available operations (`+`, `-`, `*`, `/`).
+  3. Enters a loop to perform operations until the user decides to exit.
+     - Prompts the user to pick an operation (`operation_symbol`).
+     - Prompts the user to enter the next number (`num2`).
+     - Fetches the corresponding function from the `operations` dictionary and calculates the result (`answer`).
+     - Displays the result of the operation.
+     - Asks the user whether to continue with the current result (`y`), start a new calculation (`n`), or exit (`q`).
+     - If `y`, sets `num1` to the current result (`answer`) and continues the loop.
+     - If `n`, calls `calculator()` to start over.
+     - If `q`, exits the loop and prints a message indicating the operation has exited.
+
+## Usage
+1. Run the program.
+2. Enter the first number when prompted.
+3. Select an operation from the displayed options.
+4. Enter the next number.
+5. View the result of the operation.
+6. Decide whether to continue with the current result, start a new calculation, or exit the program.
+
