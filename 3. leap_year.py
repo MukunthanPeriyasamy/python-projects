@@ -14,12 +14,14 @@ else:
     print(f"{year} is not a leap year")
     print("This year will end up with 365 days!")
 
-
+---------------------------------------------------------------------------
 # # Leap Year Checker Program Documentation
 #
 # ## Introduction
 #
-# This program is designed to determine whether a given year is a leap year. It takes an input year from the user and uses control flow statements to check the leap year conditions. The program then outputs whether the year is a leap year and the total number of days in that year.
+# This program is designed to determine whether a given year is a leap year. 
+# It takes an input year from the user and uses control flow statements to check the leap year conditions. 
+# The program then outputs whether the year is a leap year and the total number of days in that year.
 #
 # ## Program Structure
 #
